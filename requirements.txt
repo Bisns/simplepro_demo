@@ -1,7 +1,6 @@
-Django>=3.2.6
+Django==4.2.16
 django-import-export
-django-simpleui
-simplepro
+django-simpleui==2024.10.25
+simplepro==7.10
 Pillow
 requests
-django_choices_enums
