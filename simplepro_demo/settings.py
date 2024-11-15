@@ -40,12 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'demo.apps.DemoConfig',
     # 注册自己的app
-    'demo',
-    'finance',
     'components',
-    'dialog',
-    # 三级联动示例
-    'three_cascade'
 ]
 
 MIDDLEWARE = [
@@ -60,7 +55,7 @@ MIDDLEWARE = [
     'simplepro.middlewares.SimpleMiddleware',
 
     # 该中间件用于屏蔽普通用户修改密码功能，可以注释掉
-    # 'simplepro_demo.middlewares.PasswordChangeMiddleware'
+    'simplepro_demo.middlewares.PasswordChangeMiddleware'
 ]
 
 ROOT_URLCONF = 'simplepro_demo.urls'
@@ -213,7 +208,7 @@ SIMPLEPRO_CHART_DISPLAY = True
 
 # 3.1及以上版本支持
 # 配置是否显示监控图表
-SIMPLEPRO_MONIT_DISPLAY = True
+SIMPLEPRO_MONIT_DISPLAY = False
 
 # AUTH_USER_MODEL = 'simplepro.AuthUser'
 
@@ -229,7 +224,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SIMPLEPRO_FK_ASYNC_DATA = True
 
 # 安全秘钥，登录官方网站点击我的头像，获取秘钥
-SIMPLEPRO_SECRET_KEY = '2c4411a795534e0fbc28720051161434'
+SIMPLEPRO_SECRET_KEY = ''
+SIMPLEPRO_INFO = False
 
 # 启用验证码，True和False，默认为True
-SIMPLEPRO_CAPTCHA_ENABLED = True
+SIMPLEPRO_CAPTCHA_ENABLED = False
